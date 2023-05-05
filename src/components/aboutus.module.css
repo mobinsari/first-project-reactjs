@@ -1,0 +1,83 @@
+.box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.childBox1 {
+    width: 320px;
+    height: 535px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.childBox2 {
+    width: 320px;
+    height: 535px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.headerBox {
+    margin: auto;
+    height: 50px;
+    width: 330px;
+}
+.headerText{
+    font-size: 3rem;
+    margin-top: 320px;
+}
+
+.imageAbout {
+    width: 320px;
+    height: 180px;
+}
+
+.text1 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.text2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.textBody {
+    color: #fff;
+    width: 275px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(194, 173, 144);
+}
+
+.textHeader {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.textFooter {
+    margin-bottom: 10px
+}
+
+@media (max-width: 700px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .childBox1 {
+        margin-left: 34px;
+        margin-bottom: 60px;
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Animate } from "react-simple-animate";
+// my effects
+import{ Slide } from 'react-awesome-reveal'
 // styles
 import styles from './main.module.css'
 // image
@@ -10,17 +11,21 @@ const Main = () => {
         <div className={styles.container}>
             <div>
                 <img className={styles.mainImage} src={mainImage} alt='cofee' />
-                <Animate play  easeType='cubic-bezier(0.445, 0.05, 0.55, 0.95' start={{ opacity: 0 }} end={{ opacity: 1 }}>
                 <div className={styles.box}>
+                    <Slide direction='right'>
                     <h1 className={styles.headerText}>Unique Craft Cafe in NYC</h1>
+                    </Slide>
+                    <Slide direction='right'>
                     <p className={styles.bodyText}>
                         Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor.
                         A lacus vestibulum sed arcu non.Dolor magna eget est lorem ipsum dolor sit
                         amet consectetur.
                     </p>
+                    </Slide>
+                <Slide direction='right'>
                     <button className={styles.button}>VIEW MENU</button>
+                </Slide>
                 </div>
-                </Animate>
             </div>
         </div>
     );

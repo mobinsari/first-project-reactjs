@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+// scroll locking  
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 // import react simple animate for animation styles
 import { Animate } from 'react-simple-animate';
 // svg 
@@ -22,6 +24,9 @@ const Header = () => {
 
     return (
         <div className={styles.container}>
+            {
+                menu ? disableBodyScroll(document) : enableBodyScroll(document)
+            }
             <div>
                 {
                     menu ? <img onClick={hideMenu} className={styles.closeMenu} src={closeMenu} alt='closemenu' /> : 
